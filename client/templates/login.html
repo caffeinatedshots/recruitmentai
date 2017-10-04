@@ -1,0 +1,22 @@
+<template name="login">
+	<section>
+		<div class="inner" align="center">
+			<form class="login">
+				<h1>Login</h1>
+				<input type="text" id="username" placeholder="Username" required /><br>
+				<input type="password" id="password" placeholder="Password" required /><br>
+				<input type="submit" value="Login" class="button special" />
+				<button id="loginSignupToggle" class="alt">Switch to signup</button>
+			</form>
+			<form class="signup" style="display:none">
+				<h1>Signup</h1>
+				<input type="text" id="username" placeholder="Username" required /><br>
+				<input type="password" id="password" placeholder="Password" required /><br>
+				<input type="password" name="passwordConfirm" onchange="form.password.pattern = this.value" placeholder="Confirm Password" required /><br>
+				<input type="submit" value="Signup" class="button special" />
+				<button id="loginSignupToggle" class="alt">Switch here to login</button>
+			</form>
+			
+		</div>
+	</section>
+</template>

@@ -1,0 +1,33 @@
+<template name="header">
+	<header id="header">
+		<div class="inner">
+			<a href="/" class="logo">RecruitmentAI</a>
+			<nav id="nav">
+				<a href="/">Home</a>
+				{{#if currentUser}}
+				<a href="/profile">Profile</a>
+				{{else}}
+				<a href="/login">Login</a>
+				{{/if}}
+				<a href="/about">About</a>
+				{{#if currentUser}}
+				<a href="#" id="logout">Logout</a>
+				{{/if}}
+			</nav>
+		</div>
+	</header>
+	<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+	<a href="#navPanel" class="navPanelToggle"></a>
+	<div id="navPanel">
+		<a href="/">Home</a>
+		{{#if currentUser}}
+		<a href="/profile">Profile</a>
+		{{else}}
+		<a href="/login">Login</a>
+		{{/if}}
+		<a href="/about">About</a>
+		{{#if currentUser}}
+		<a href="#" id="logout">Logout</a>
+		{{/if}}
+	</div>
+</template>
