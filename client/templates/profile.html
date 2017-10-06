@@ -1,0 +1,35 @@
+<template name="profile">
+	<section>
+		<div class="inner">
+			<h1 align="center">Profile</h1>
+			<form id="profile">
+				<div class="row uniform">
+					<div class="12u$ 12u$(xsmall)">
+						<h3>Basic Information</h3>
+					</div>
+
+					<div class="2u 12u$(xsmall)">
+						<div class="select-wrapper">
+							<select name="salutation">
+								<option value="Mr">Mr</option>
+								<option value="Mrs">Mrs</option>
+								<option value="Ms">Ms</option>
+								<option value="Dr">Dr</option>
+							</select>
+						</div>
+					</div>
+					<div class="10u$ 12u$(xsmall)">
+						<input type="text" name="name" placeholder="Name" />
+					</div>
+
+					<div class="9u 12u$(xsmall)">
+						<input type="text" name="address" placeholder="Address" />
+					</div>
+					<div class="3u$ 12u$(xsmall)">
+						<input type="number" name="postal" placeholder="Postal" />
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+</template>
