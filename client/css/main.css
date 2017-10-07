@@ -2081,6 +2081,8 @@
 	input[type="password"],
 	input[type="email"],
 	input[type="number"],
+	input[type="tel"],
+	input[type="month"],
 	select,
 	textarea {
 		-moz-appearance: none;
@@ -2102,6 +2104,8 @@
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
 		input[type="number"]:invalid,
+		input[type="tel"]:invalid,
+		input[type="month"]:invalid,
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
@@ -2143,6 +2147,8 @@
 	input[type="password"],
 	input[type="email"],
 	input[type="number"],
+	input[type="tel"],
+	input[type="month"],
 	select {
 		height: 2.75em;
 	}
@@ -2243,6 +2249,8 @@
 	input[type="password"],
 	input[type="email"],
 	input[type="number"],
+	input[type="tel"],
+	input[type="month"],
 	select,
 	textarea {
 		background: none;
@@ -2253,6 +2261,8 @@
 		input[type="password"]:focus,
 		input[type="email"]:focus,
 		input[type="number"]:focus,
+		input[type="tel"]:focus,
+		input[type="month"]:focus,
 		select:focus,
 		textarea:focus {
 			border-color: #e5474b;

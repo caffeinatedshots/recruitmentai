@@ -8,27 +8,83 @@
 						<h3>Basic Information</h3>
 					</div>
 
-					<div class="2u 12u$(xsmall)">
-						<div class="select-wrapper">
-							<select name="salutation">
-								<option value="Mr">Mr</option>
-								<option value="Mrs">Mrs</option>
-								<option value="Ms">Ms</option>
-								<option value="Dr">Dr</option>
-							</select>
+						<div class="2u 12u$(xsmall)">
+							<div class="select-wrapper">
+								<select name="salutation">
+									<option value="Mr">Mr</option>
+									<option value="Mrs">Mrs</option>
+									<option value="Ms">Ms</option>
+									<option value="Dr">Dr</option>
+								</select>
+							</div>
 						</div>
-					</div>
-					<div class="10u$ 12u$(xsmall)">
-						<input type="text" name="name" placeholder="Name" />
+						<div class="10u$ 12u$(xsmall)">
+							<input type="text" name="name" placeholder="Name" required />
+						</div>
+
+						<div class="10u 12u$(xsmall)">
+							<input type="text" name="address" placeholder="Address" required />
+						</div>
+						<div class="2u$ 12u$(xsmall)">
+							<input type="text" name="postal" placeholder="Postal" pattern="[0-9]{6}" minlength="6" maxlength="6" required />
+						</div>
+
+						<div class="9u 12u$(xsmall)">
+							<input type="email" name="email" placeholder="Email Address" required />
+						</div>
+						<div class="3u$ 12u$(xsmall)">
+							<input type="tel" name="telephone" placeholder="Telephone" minlength="8" maxlength="8" required />
+						</div>
+
+					<div class="12u$ 12u$(xsmall)">
+						<h3>Highest Education</h3>
 					</div>
 
-					<div class="9u 12u$(xsmall)">
-						<input type="text" name="address" placeholder="Address" />
+						<div class="2u 12u$(xsmall)">
+							<div class="select-wrapper">
+								<select name="educationLevel">
+									<option value="Doctorate">Doctorate</option>
+									<option value="Masters">Masters</option>
+									<option value="Bachelor">Bachelor</option>
+									<option value="Diploma">Diploma</option>
+									<option value="IB">IB</option>
+									<option value="GCE A Levels">GCE A Levels</option>
+									<option value="GCE O Levels">GCE O Levels</option>
+									<option value="GCE N Levels">GCE N Levels</option>
+									<option value="PSLE">PSLE</option>
+								</select>
+							</div>
+						</div>
+						<div class="4u 12u$(xsmall)">
+							<input type="text" name="fieldOfStudy" placeholder="Field of Study" required/>
+						</div>
+						<div class="3u 12u$(xsmall)">
+							<input type="text" onfocus="(this.type='month')" name="educationFrom" placeholder="From" required/>
+						</div>
+						<div class="3u$ 12u$(xsmall)">
+							<input type="text" onfocus="(this.type='month')" name="educationTo" placeholder="To" required/>
+						</div>
+
+						<div class="8u 12u$(xsmall)">
+							<input type="text" name="instituition" placeholder="Instituition" required/>
+						</div>
+						<div class="4u$ 12u$(xsmall)">
+							<input type="text" name="grade" placeholder="Grade" required/>
+						</div>
+
+					<div class="12u$ 12u$(xsmall)">
+						<h3>Work Experience</h3>
 					</div>
-					<div class="3u$ 12u$(xsmall)">
-						<input type="number" name="postal" placeholder="Postal" />
+
+						
+
+
+
+					<div class="12u$ 12u$(xsmall)" align="center">
+						<input type="submit" value="Submit" class="button special" />
 					</div>
 				</div>
+
 			</form>
 		</div>
 	</section>
