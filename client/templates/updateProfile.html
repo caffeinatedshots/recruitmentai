@@ -1,7 +1,22 @@
-<template name="profile">
+<template name="updateProfile">
 	<section>
 		<div class="inner">
-			<h1 align="center">Profile</h1>
+			<h1 align="center">Update Profile</h1>
+			<form id="resumeUpload">
+				<div class="row uniform">
+					<div class="12u$ 12u$(xsmall)">
+						<h3>Resume Upload</h3>
+					</div>
+					<div class="10u 12u$(xsmall)">
+						<input type="file" name="resume" id="resume" style="display:none" accept=".doc, .docx, .pdf" onChange="$('#uploadLabel').html(this.value.replace(/^.*\\/, ''))"/>
+						<label for="resume"><a class="button special fit" id="uploadLabel">Upload Resume (.doc, .docx, .pdf only)</a></label>
+					</div>
+					<div class="2u$ 12u$(xsmall)">
+						<label><a class="button alt fit" onClick="form.submit()">Submit</a></label>
+					</div>
+				</div>
+			</form>
+			<h2 align="center">OR</h2>
 			<form id="profile">
 				<div class="row uniform">
 					<div class="12u$ 12u$(xsmall)">
@@ -76,16 +91,40 @@
 						<h3>Work Experience</h3>
 					</div>
 
-						
+						<div class="6u 12u$(xsmall)">
+							<input type="text" name="company" placeholder="Company" required />
+						</div>
+						<div class="3u 12u$(xsmall)">
+							<input type="text" onfocus="(this.type='month')" name="workFrom" placeholder="From" required/>
+						</div>
+						<div class="3u$ 12u$(xsmall)">
+							<input type="text" onfocus="(this.type='month')" name="workTo" placeholder="To" required/>
+						</div>
 
+						<div class="4u 12u$(xsmall)">
+							<input type="text" name="jobRole" placeholder="Job Role" required />
+						</div>
+						<div class="8u$ 12u$(xsmall)">
+							<input type="text" name="jobDescription" placeholder="Description" required />
+						</div>
+
+					<div class="12u$ 12u$(xsmall)">
+						<h3>Skills</h3>
+					</div>
+
+						<div class="12u$ 12u$(xsmall)">
+							<input type="text" name="skills" placeholder="Skills (separated by ,)" />
+						</div>
 
 
 					<div class="12u$ 12u$(xsmall)" align="center">
 						<input type="submit" value="Submit" class="button special" />
 					</div>
 				</div>
-
 			</form>
+		
+
+			
 		</div>
 	</section>
 </template>

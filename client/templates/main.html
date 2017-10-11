@@ -4,7 +4,12 @@
 			<h1>Recruitment AI<span><br />
 			your dream job is not a dream</span></h1>
 			<ul class="actions">
-				<li><a href="#" class="button alt">Get Started</a></li>
+				{{#if currentUser}}
+				<li><a href="/dashboard" class="button special">Dashboard</a></li>
+				<li><a href="/discover" class="button alt">Discover Jobs</a></li>
+				{{else}}
+				<li><a href="/login" class="button alt">Get Started</a></li>
+				{{/if}}
 			</ul>
 		</div>
 	</section>
