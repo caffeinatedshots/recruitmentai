@@ -29,7 +29,7 @@ Template.updateProfile.events({
 			const jobDescription = event.target.jobDescription.value;
 			const skills = event.target.skills.value.split(",");
 
-			Meteor.call('addApplicant', name, sex, address, postal, email, telephone, educationLevel, fieldOfStudy, educationFrom, educationTo,
+			Meteor.call('upsertApplicant', name, sex, address, postal, email, telephone, educationLevel, fieldOfStudy, educationFrom, educationTo,
 				instituition, grade, company, workFrom, workTo, jobRole, jobDescription, skills, function(err){
 					if (err){
 						sAlert.error(err.reason);
@@ -44,5 +44,5 @@ Template.updateProfile.events({
 	
 });
 
-Template.deliver.helpers({
+Template.updateProfile.helpers({
 });

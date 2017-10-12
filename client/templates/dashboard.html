@@ -1,7 +1,68 @@
 <template name="dashboard">
 	<section>
-		<div class="inner" align="center">
-			<a href="/updateProfile" class="button special">Update Profile</a>
+		<div class="inner">
+			<h1 align="center">Dashboard</h1>
+			<h4 align="center">{{profile.Username}}</h4>
+			
+
+			<h3>Profile <a href="/updateProfile"><i class="fa fa-pencil-square-o" style="color:grey"></i></a></h3>
+			<div class="table-wrapper">
+				<table>
+					<tbody>
+						<tr>
+							<td>Name</td>
+							<td>{{profile.Name}}</td>
+						</tr>
+						<tr>
+							<td>Sex</td>
+							<td>{{profile.Sex}}</td>
+						</tr>
+						<tr>
+							<td>Address</td>
+							<td>{{profile.Address}}<br>
+							Singapore {{profile.Postal}}</td>
+						</tr>
+						<tr>
+							<td>Email</td>
+							<td>{{profile.Email}}</td>
+						</tr>
+						<tr>
+							<td>Telephone</td>
+							<td>{{profile.Telephone}}</td>
+						</tr>
+						<tr>
+							<td>Education</td>
+							<td>{{profile.EducationLevel}} in {{profile.FieldOfStudy}} at {{profile.Instituition}}</td>
+						</tr>
+						<tr>
+							<td>Date</td>
+							<td>{{profile.EducationFrom}} till {{profile.EducationTo}}</td>
+						</tr>
+						<tr>
+							<td>Grade</td>
+							<td>{{profile.Grade}}</td>
+						</tr>
+						<tr>
+							<td>Worked At</td>
+							<td>{{profile.Company}} ({{profile.JobRole}})</td>
+						</tr>
+						<tr>
+							<td>Date</td>
+							<td>{{profile.WorkFrom}} till {{profile.WorkTo}}</td>
+						</tr>
+						<tr>
+							<td>Description</td>
+							<td>{{profile.JobDescription}}</td>
+						</tr>
+						<tr>
+							<td>Skills</td>
+							<td>{{#each profile.Skills}}
+								{{this}}<br>
+							{{/each}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 	</section>
 </template>
