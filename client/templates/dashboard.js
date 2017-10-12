@@ -16,5 +16,13 @@ Template.dashboard.events({
 Template.dashboard.helpers({
 	profile(){
 		return Applicants.findOne({_id: Meteor.userId()});
+	},
+
+	momentFormat(date, formatString){
+		return moment(date).format(formatString);
+	},
+
+	equals(expression1, expression2){
+		return expression1 == expression2;
 	}
 });
