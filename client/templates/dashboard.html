@@ -1,51 +1,7 @@
 <template name="dashboard">
 	<section>
 		<div class="inner">
-			<h1 align="center">Dashboard</h1>
-			<h3>Profile <a href="/updateProfile"><i class="fa fa-pencil-square-o" style="color:grey"></i></a></h3>
-			<div class="table-wrapper">
-				<table>
-					<tbody>
-						<tr>
-							<td>Name</td>
-							<td>{{#if equals profile.Sex "Male"}}
-								<i class="fa fa-mars"></i>
-								{{else}}
-								<i class="fa fa-venus"></i>
-								{{/if}}
-								{{profile.Name}}</td>
-						</tr>
-						<tr>
-							<td>Address</td>
-							<td>{{profile.Address}}<br>
-							Singapore {{profile.Postal}}</td>
-						</tr>
-						<tr>
-							<td>Contact</td>
-							<td><i class="fa fa-envelope"></i>	{{profile.Email}}<br>
-								<i class="fa fa-phone"></i>	{{profile.Telephone}}</td>
-						</tr>
-						<tr>
-							<td>Education</td>
-							<td>{{profile.EducationLevel}} in {{profile.FieldOfStudy}} ({{profile.Grade}})<br>
-								{{profile.Instituition}}<br>
-								{{momentFormat profile.EducationFrom "MMM Y"}} till {{momentFormat profile.EducationTo "MMM Y"}}</td>
-						</tr>
-						<tr>
-							<td>Work Experience</td>
-							<td>{{profile.JobRole}} ({{profile.Company}})<br>
-								{{profile.JobDescription}}<br>
-								{{momentFormat profile.WorkFrom "MMM Y"}} till {{momentFormat profile.WorkTo "MMM Y"}}</td>
-						</tr>
-						<tr>
-							<td>Skills</td>
-							<td>{{#each profile.Skills}}
-								{{this}}<br>
-							{{/each}}</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
+			dashboard placeholder
 		</div>
 	</section>
 </template>

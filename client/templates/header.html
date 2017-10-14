@@ -1,17 +1,20 @@
 <template name="header">
 	<header id="header">
 		<div class="inner">
-			<a href="/" class="logo">RecruitmentAI</a>
+			{{#if currentUser}}
+			<a href="/dashboard" class="logo">Ezeer</a>
+			{{else}}
+			<a href="/" class="logo">Ezeer</a>
+			{{/if}}
 			<nav id="nav">
-				<a href="/">Home</a>
 				{{#if currentUser}}
 				<a href="/dashboard">Dashboard</a>
 				<a href="/discover">Discover</a>
-				{{/if}}
-				<a href="/about">About</a>
-				{{#if currentUser}}
+				<a href="/profile">Profile</a>
 				<a href="#" id="logout">Logout</a>
 				{{else}}
+				<a href="/">Home</a>
+				<a href="/about">About</a>
 				<a href="/login" id="login">Login</a>
 				{{/if}}
 			</nav>
@@ -20,15 +23,14 @@
 	<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 	<a href="#navPanel" class="navPanelToggle"></a>
 	<div id="navPanel">
-		<a href="/">Home</a>
 		{{#if currentUser}}
 		<a href="/dashboard">Dashboard</a>
 		<a href="/discover">Discover</a>
-		{{/if}}
-		<a href="/about">About</a>
-		{{#if currentUser}}
+		<a href="/profile">Profile</a>
 		<a href="#" id="logout">Logout</a>
 		{{else}}
+		<a href="/">Home</a>
+		<a href="/about">About</a>
 		<a href="/login" id="login">Login</a>
 		{{/if}}
 	</div>

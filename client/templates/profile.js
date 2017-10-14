@@ -2,18 +2,18 @@ import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
 import { Applicants } from '../../imports/applicantsDB.js';
 
-import './dashboard.html';
+import './profile.html';
 
-Template.dashboard.onCreated(function() {
+Template.profile.onCreated(function() {
 	Meteor.subscribe("allApplicants");
 
 });
 
-Template.dashboard.events({
+Template.profile.events({
 	
 });
 
-Template.dashboard.helpers({
+Template.profile.helpers({
 	profile(){
 		return Applicants.findOne({_id: Meteor.userId()});
 	},

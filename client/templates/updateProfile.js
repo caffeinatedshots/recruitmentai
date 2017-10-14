@@ -38,7 +38,7 @@ Template.updateProfile.events({
 
 			sAlert.success("Your profile has been updated");
 
-			FlowRouter.go("/dashboard");
+			FlowRouter.go("/profile");
 		}
 	}
 	
