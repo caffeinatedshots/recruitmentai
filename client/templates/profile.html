@@ -1,7 +1,11 @@
 <template name="profile">
+	<section style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/stars.jpg'); background-size:cover; padding: 7em 0 7em 0;">
+		<div class="inner" align="center">
+			<h1 style="color:white">{{currentUser.username}}</h1>
+		</div>
+	</section>
 	<section>
 		<div class="inner">
-			<h1 align="center">{{currentUser.username}}</h1>
 			<h3>Profile <a href="/updateProfile"><i class="fa fa-pencil-square-o" title="Click to edit profile" style="color:grey"></i></a></h3>
 			{{#if profile.Name}}
 			<div class="table-wrapper">
