@@ -20,7 +20,7 @@ Template.login.events({
         else{
             sAlert.success("Welcome, " + username);
             sAlert.success("You are now logged in");
-            FlowRouter.go('/discover');
+            FlowRouter.go('/');
         }
     });
     

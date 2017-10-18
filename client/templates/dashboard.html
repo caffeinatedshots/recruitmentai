@@ -1,11 +1,139 @@
 <template name="dashboard">
+	<section style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/pic02.jpg'); background-size:cover; padding: 7em 0 7em 0;">
+		<div class="inner" align="center">
+			<h1 style="color:white">Dashboard</h1>
+		</div>
+	</section>
 	<section>
 		<div class="inner">
-			<h1 align="center">Dashboard</h1>
 			<h3>Applied</h3>
+			<div class="table-wrapper">
+				<table>
+					<thead>
+						<th>#</th>
+						<th>Job Role</th>
+						<th>Company</th>
+						<th>Deadline</th>
+						<th>Actions</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Software Engineer</td>
+							<td>Google Inc.</td>
+							<td>18 November 2017</td>
+							<td><a href="#popupgoogle" class="button alt">More</a></td>
+							<div id="popupgoogle" class="overlay">
+								<div class="popup">
+									<h3 style="margin:0">Software Engineer
+										<span class="fa-stack">
+											<i class="fa fa-square fa-stack-2x"></i>
+											<p class="fa-stack-1x fa-inverse">8.7</p>
+										</span>
+									</h3>
+									<i>Google Inc.<br>
+									1600 Amphitheatre Pkwy, Mountain View, CA 94043, USA<br>
+									Application closes 18 November 2017</i>
+									<h4 style="margin:0">Description</h4>
+									<ul>
+										<li>Determines operational feasibility by evaluating analysis, problem definition, and proposed solutions.</li>
+										<li>Documents and demonstrates solutions by developing documentation, flowcharts, layouts, diagrams and clear code.</li>
+										<li>Prepares and installs solutions by determining and designing system specifications, standards, and programming.</li>
+										<li>Improves operations by conducting systems analysis; recommending changes in policies and procedures.</li>
+										<li>Obtains and licenses software by obtaining required information from vendors; recommending purchases; testing and approving products.</li>
+									</ul>
+									<h4 style="margin:0">Salary</h4>
+									<p>$3000 - $4300</p>
+									<a class="close" href="#">&times;</a>
+								</div>
+							</div>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Systems Admin</td>
+							<td>Government Technology Agency</td>
+							<td>19 November 2017</td>
+							<td><a href="#popupgovtech" class="button alt">More</a></td>
+							<div id="popupgovtech" class="overlay">
+								<div class="popup">
+									<h3 style="margin:0">Systems Admin
+										<span class="fa-stack">
+											<i class="fa fa-square fa-stack-2x"></i>
+											<p class="fa-stack-1x fa-inverse">7.8</p>
+										</span>
+									</h3>
+									<i>Government Technology Agency<br>
+									10 Pasir Panjang Road, #10-01 Mapletree Business City, Singapore 117438<br>
+									Application closes 19 November 2017</i>
+									<h4 style="margin:0">Description</h4>
+									<ul>
+										<li>Setting up new Windows or Linux servers for the environment</li>
+										<li>Setting up new user machines to connect to servers</li>
+										<li>Creation and setting up of new user accounts for developers</li>
+										<li>Conducting training for users on how to log in/using of server resources</li>
+										<li>Monitoring of jobs and hardware components for failure</li>
+										<li>Troubleshooting performance and configuration issues</li>
+									</ul>
+									<h4 style="margin:0">Salary</h4>
+									<p>$3500 - $4000</p>
+									<a class="close" href="#">&times;</a>
+								</div>
+							</div>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 			<h3>Offered</h3>
-
-			
+			<div class="table-wrapper">
+				<table>
+					<thead>
+						<th>#</th>
+						<th>Job Role</th>
+						<th>Company</th>
+						<th>Details</th>
+						<th>Actions</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Financial Analyst</td>
+							<td>Red Hat Inc.</td>
+							<td><a href="#popupredhat" class="button alt">More</a></td>
+							<td>
+								<a href="#reject" class="button">Reject</a>
+								<a href="#accept" class="button special">Accept</a>
+							</td>
+							<div id="popupredhat" class="overlay">
+								<div class="popup">
+									<h3 style="margin:0">Financial Analyst
+										<span class="fa-stack">
+											<i class="fa fa-square fa-stack-2x"></i>
+											<p class="fa-stack-1x fa-inverse">7.3</p>
+										</span>
+									</h3>
+									<i>Red Hat Inc.<br>
+									8 Shenton Way, AXA Tower, Singapore 068811<br>
+									Application closes 18 November 2017</i>
+									<h4 style="margin:0">Description</h4>
+									<ul>
+										<li>Prepare weekly forecast reports for individual sales teams and the region</li>
+										<li>Track performance metrics of our representatives like linearity, product mix and open pipeline</li>
+										<li>Analyze the pipeline for mix, aging, quality, etc.</li>
+										<li>Support the setting of quotas, change tracking, and communication with relevant managers</li>
+										<li>Perform segment quarterly business reviews (QBRs) for the enterprise, channel, offerings, etc.</li>
+										<li>Provide planning support to managers (historical performance data for segments and representatives)</li>
+										<li>Measure statistical trends to support forecast (close rates, linearity, early renewal trends, etc.)</li>
+										<li>Create state-of-play dashboards</li>
+									</ul>
+									<h4 style="margin:0">Salary</h4>
+									<p>$5000 - $6300</p>
+									<a class="close" href="#">&times;</a>
+								</div>
+							</div>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 	</section>
 </template>
