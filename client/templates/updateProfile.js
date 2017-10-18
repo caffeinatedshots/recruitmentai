@@ -7,6 +7,17 @@ Template.updateProfile.onCreated(function() {
 });
 
 Template.updateProfile.events({
+	"click #submitresume"(event, template){
+		event.preventDefault();
+		$("#uploadLabel").html('<i class="fa fa-cog fa-spin"></i> Extracting Data');
+		$("#submitresume").addClass("disabled");
+		setTimeout(function(){
+			sAlert.success("Profile populated!");
+			FlowRouter.go("/profile");
+		}, 5000);
+		
+	},
+
 	"submit #profile"(event, template){
 		event.preventDefault();
 		if (confirm("Confirm submission?")){
